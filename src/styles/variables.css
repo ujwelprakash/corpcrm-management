@@ -1,0 +1,9 @@
+:root {
+--color-bg: 255 255 255;
+--color-text: 0 0 0;
+}
+
+.dark {
+--color-bg: 17 24 39;
+--color-text: 255 255 255;
+}

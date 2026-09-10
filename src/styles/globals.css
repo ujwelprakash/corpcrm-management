@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light Theme ── */
+:root {
+  /* Accent (Orange / Amber) */
+  --accent:           249 115 22;   /* orange-500 */
+  --accent-hover:     234 88  12;   /* orange-600 */
+  --accent-light:     255 247 237;  /* orange-50  */
+  --accent-mid:       253 186 116;  /* orange-300 */
+  --accent-border:    254 215 170;  /* orange-200 */
+
+  /* Background */
+  --color-bg:         255 255 255;  /* white */
+  --color-bg-soft:    249 250 251;  /* gray-50  */
+  --color-bg-muted:   243 244 246;  /* gray-100 */
+
+  /* Text */
+  --color-text:       17  24  39;   /* gray-900 */
+  --color-text-soft:  75  85  99;   /* gray-600 */
+  --color-text-muted: 156 163 175;  /* gray-400 */
+
+  /* Border */
+  --color-border:     229 231 235;  /* gray-200 */
+  --color-border-soft:243 244 246;  /* gray-100 */
+
+  /* Surface (cards, sidebar) */
+  --color-surface:    255 255 255;  /* white */
+  --color-surface-raised: 249 250 251; /* gray-50 */
+}
+
+/* Blue Theme */
+[data-theme="blue"] {
+  --accent:           59 130 246;   /* blue-500 */
+  --accent-hover:     37 99 235;    /* blue-600 */
+  --accent-light:     239 246 255;  /* blue-50 */
+  --accent-mid:       147 197 253;  /* blue-300 */
+  --accent-border:    191 219 254;  /* blue-200 */
+}
+
+/* Emerald Theme */
+[data-theme="emerald"] {
+  --accent:           16 185 129;   /* emerald-500 */
+  --accent-hover:     5 150 105;    /* emerald-600 */
+  --accent-light:     236 253 245;  /* emerald-50 */
+  --accent-mid:       110 231 183;  /* emerald-300 */
+  --accent-border:    167 243 208;  /* emerald-200 */
+}
+
+/* ── Dark Theme ── */
+.dark {
+  /* Accent (slightly lighter for dark bg readability) */
+  --accent:           251 146 60;   /* orange-400 */
+  --accent-hover:     249 115 22;   /* orange-500 */
+  --accent-light:     67  20   7;   /* orange-950 */
+  --accent-mid:       154 52   18;  /* orange-800 */
+  --accent-border:    124 45   18;  /* orange-900 */
+
+  /* Background */
+  --color-bg:         10  10  15;   /* near black */
+  --color-bg-soft:    17  24  39;   /* gray-900   */
+  --color-bg-muted:   31  41  55;   /* gray-800   */
+
+  /* Text */
+  --color-text:       249 250 251;  /* gray-50  */
+  --color-text-soft:  209 213 219;  /* gray-300 */
+  --color-text-muted: 107 114 128;  /* gray-500 */
+
+  /* Border */
+  --color-border:     55  65  81;   /* gray-700 */
+  --color-border-soft:31  41  55;   /* gray-800 */
+
+  /* Surface */
+  --color-surface:    17  24  39;   /* gray-900 */
+  --color-surface-raised: 31 41 55; /* gray-800 */
+}
+
+.dark[data-theme="blue"] {
+  --accent:           96 165 250;   /* blue-400 */
+  --accent-hover:     59 130 246;   /* blue-500 */
+  --accent-light:     30 58 138;    /* blue-900 */
+  --accent-mid:       30 64 175;    /* blue-800 */
+  --accent-border:    30 58 138;    /* blue-900 */
+}
+
+.dark[data-theme="emerald"] {
+  --accent:           52 211 153;   /* emerald-400 */
+  --accent-hover:     16 185 129;   /* emerald-500 */
+  --accent-light:     6 78 59;      /* emerald-900 */
+  --accent-mid:       6 95 70;      /* emerald-800 */
+  --accent-border:    6 78 59;      /* emerald-900 */
+}
+
+/* ── Smooth theme transition ── */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
